@@ -16,7 +16,7 @@ basic.forever(function () {
     右 = pins.digitalReadPin(DigitalPin.P12)
     if (左 == 0 && 右 == 0) {
         makerbit.clearLcd1602()
-        makerbit.showStringOnLcd1602("forward", makerbit.position1602(LcdPosition1602.Pos1), 16)
+        makerbit.showStringOnLcd1602("Forward", makerbit.position1602(LcdPosition1602.Pos1), 16)
         cbit_小车类.CarCtrl(cbit_小车类.CarState.Car_Run)
     } else if (左 == 1 && 右 == 0) {
         makerbit.clearLcd1602()
